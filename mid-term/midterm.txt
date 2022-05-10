@@ -1,0 +1,11 @@
+Bài 1: Tinh tich phan:
+vd: f(x) = ax^2 + b trong khoảng (-c, c),
+trong đó a,b > 0.
+Input: a, b, c.
+-> chia nhỏ hình thành nhiều phần nhỏ hơn (n phần)
+-> n là input hay ko???
+-> tính sum là ra diện tích.
+
+Bài 2: Kiến trúc của tập lệnh (instruction set)
+- các loại R, I, J...
+- Giải thích machine code
