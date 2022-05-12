@@ -9,3 +9,93 @@ Input: a, b, c.
 Bài 2: Kiến trúc của tập lệnh (instruction set)
 - các loại R, I, J...
 - Giải thích machine code
+
+
+(ax + b)_c ------------------------------------------------------------------------
+
+f0 ------------------
+f1 - a
+f2 - b
+f3
+f4
+f5 - c (-c to c)
+f6 - n
+f7 - element length = (2*c)/n
+f8 - x1
+f9 - x2 (from -c)
+f10 - temp. area
+f11 = 2 (const)
+f12-------------------
+f13 - f(x1)
+f14 - f(x2)
+f15 - sum (from 0)
+t1 - counter
+
+f(x) = 3x + 9   in   (-2, 2)   with c = 2
+						n = 10
+					===>	ele = 0.4	
+-2, -1.6, -1.2, -0.8, -0.4, 0, 0.4, 0.8, 1.2, 1.6, 2
+
+
+
+(ax + b)_c1_c2 ------------------------------------------------------------------------ 
+
+f0 ------------------
+f1 - a
+f2 - b
+f3
+f4 - c1
+f5 - c2
+f6 - n
+f7 - element length = (c2 - c1)/n
+f8 - x1
+f9 - x2 
+f10 - temp. area
+f11 = 2 (const)
+f12-------------------
+f13 - f(x1)
+f14 - f(x2)
+f15 - sum (from 0)
+t1 - counter
+
+
+
+(ax^2 + b)_c ------------------------------------------------------------------------
+
+f0 ------------------
+f1 - a
+f2 - b
+f3
+f4
+f5 - c (-c to c)
+f6 - n
+f7 - element length = (2*c)/n
+f8 - x1
+f9 - x2 
+f10 - temp. area
+f11 = 2 (const)
+f12-------------------
+f13 - f(x1)
+f14 - f(x2)
+f15 - sum (from 0)
+t1 - counter
+
+(ax^2 + b)_c1_c2 ------------------------------------------------------------------------
+
+f0 ------------------
+f1 - a
+f2 - b
+f3
+f4 - c1
+f5 - c2
+f6 - n
+f7 - element length = (c2-c1)/n
+f8 - x1
+f9 - x2
+f10 - temp. area
+f11 = 2 (const)
+f12-------------------
+f13 - f(x1)
+f14 - f(x2)
+f15 - sum (from 0)
+t1 - counter
