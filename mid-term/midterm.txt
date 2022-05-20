@@ -99,3 +99,39 @@ f13 - f(x1)
 f14 - f(x2)
 f15 - sum (from 0)
 t1 - counter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f0 ------------------
+f1 - a
+f2 - b
+f3 - c
+f4
+f5 - d (-d to d)
+f6 - n
+f7 - element length = (2*d)/n
+f8 - x1
+f9 - x2 
+f10 - temp. area
+f11 = 2 (const)
+f12-------------------
+f13 - f(x1)
+f14 - f(x2)
+f15 - sum (from 0)
+
+t0 = 2 (decimal)
+t1 - counter

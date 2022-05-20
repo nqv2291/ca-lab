@@ -1,0 +1,84 @@
+/*
+  Simple style sheet for UCR / CSE course pages.
+
+  $Id: course.css,v 1.5 2004/11/11 23:41:16 phf Exp $
+
+  This is designed to be unobstrusive; it can be used with very
+  simple XHTML markup to get most of the desired effect. There
+  are a few classes that more adventurous instructors can use,
+  documented below.
+
+  Copyright (c) 2001-2004 by Peter H. Froehlich <phf@acm.org>.
+  Freely distributable for educational purposes.
+*/
+
+/* Basic page layout. */
+body {
+ background: white;
+ color: black;
+ margin: 2em;
+ font-family: serif;
+ text-align: justify;
+}
+
+/* Headings use a dark-ish red and have some space around them. */
+h1, h2, h3, h4, h5, h6 {
+ color: rgb(204, 0, 0);
+ padding-top: 0.2em;
+ padding-bottom: 0.2em;
+ font-family: sans-serif;
+}
+
+/* Overall heading for the site, normal separators. */
+h1 {
+ border-top: solid;
+ border-bottom: solid;
+ border-color: gray;
+}
+
+/* Heading for sections of the site, thin separators. */
+h2 {
+ border-top: solid thin;
+ border-bottom: solid thin;
+ border-color: gray;
+}
+
+/* Abused heading for the site's footer information. */
+h6 {
+ border-top: solid;
+ border-color: gray;
+}
+
+/*
+  These classes can be used to get tables with alternating
+  row colors. Specify class="top" for your heading, and use
+  class="odd" and class="even" for rows.
+*/
+
+.top {
+ color: white;
+ background: rgb(102, 102, 102);
+}
+.odd {
+ background: rgb(204, 204, 204);
+}
+.even {
+ background: rgb(153, 153, 153);
+}
+
+/*
+  A simple CSS conformant way of centering something on
+  your page. Specify class="center" for the element you
+  want centered, done.
+*/
+
+.center {
+ text-align: center;
+}
+
+/*
+  There's certainly more that could be added, for example
+  a nice navigation bar, but that will have to a later
+  version.
+*/
+
